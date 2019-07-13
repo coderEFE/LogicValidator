@@ -11,12 +11,6 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -35,14 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //initiate the info dialog
         infoDialog = new Dialog(this);
-
-        // initiate the Toast with context, message and duration for the Toast
-        //final Toast emptyInput = Toast.makeText(getApplicationContext(), "The premises and conclusion cannot be empty!", Toast.LENGTH_SHORT);
-        //final Toast invalidSymbol = Toast.makeText(getApplicationContext(), "No rules matched the input!", Toast.LENGTH_SHORT);
-        //final Toast mismatchedParens = Toast.makeText(getApplicationContext(), "Mismatched parentheses in input!", Toast.LENGTH_SHORT);
-        //final Toast trailingValues = Toast.makeText(getApplicationContext(), "Trailing values in input!", Toast.LENGTH_SHORT);
-        //final Toast exception = Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT);
 
         //get text input from premises and conclusion
         premiseText = findViewById(R.id.editText);

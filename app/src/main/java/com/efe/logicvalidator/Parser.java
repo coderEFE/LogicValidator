@@ -27,7 +27,7 @@ public class Parser {
         put(Lexer.Token.AND, 3);
 
         put(Lexer.Token.OR, 3);
-        //TODO: Check if NOT should have a lower precedence value
+
         put(Lexer.Token.NOT, 4);
 
     }};
